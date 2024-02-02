@@ -1,0 +1,30 @@
+%base-scroll {
+    &::-webkit-scrollbar {
+      max-width: 8px;
+      min-width: 8px;
+      border-radius: 100px;
+    }
+  
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #dbd3ff;
+        border-radius: 100px;
+    }
+  
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #6c4aff;
+      border-radius: 100px;
+    }
+  
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #fff;
+    }
+  
+    /* Track on hover */
+    &::-webkit-scrollbar-track:hover {
+      -webkit-box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.1),
+        inset 0 -1px 0 rgba(0,0,0, 0.1);
+    }
+  }
