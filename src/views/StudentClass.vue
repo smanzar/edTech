@@ -2,11 +2,25 @@
 import StudentProfile from '../components/StudentProfile.vue'
 import ChitChat from '../components/ChitChat.vue'
 import ChatEditor from '../components/ChatEditor.vue'
+import { ref, reactive, computed } from 'vue'
+
+const toggle_exclusive = ref(1)
 </script>
 
 <template>
   <main>
     <v-container>
+      <v-row justify='end'>
+        <v-btn-toggle v-model="toggle_exclusive" class='toggle-btn-group'>
+          <v-btn>
+            Perplexity
+          </v-btn>
+
+          <v-btn>
+            GPT
+          </v-btn>
+        </v-btn-toggle>
+      </v-row>
       <v-row align="start">
         <v-col md="1" class="pr-0">
             <div class="student-p-sec max-w-100">
